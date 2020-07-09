@@ -55,24 +55,26 @@ const Home = () => {
             </a>
           </div>
         </MenuFooter>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <a href="#" style={{ fontSize: "30px", marginBottom: "25px" }}>
-            ARTICLES
-          </a>
-          <a href="#" style={{ fontSize: "30px", marginBottom: "25px" }}>
-            VIDEOS
-          </a>
-          <a href="#" style={{ fontSize: "30px" }}>
-            SHOP
-          </a>
-        </div>
+        {openMenu && (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <a href="#" style={{ fontSize: "30px", marginBottom: "25px" }}>
+              ARTICLES
+            </a>
+            <a href="#" style={{ fontSize: "30px", marginBottom: "25px" }}>
+              VIDEOS
+            </a>
+            <a href="#" style={{ fontSize: "30px" }}>
+              SHOP
+            </a>
+          </div>
+        )}
       </Footer>
     </Background>
   );
