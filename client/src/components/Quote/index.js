@@ -75,7 +75,7 @@ const Quote = () => {
         - The Cube
       </span>
       <a
-        href="/home"
+        href="/articles"
         style={{
           color: "white",
           position: "absolute",
